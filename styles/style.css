@@ -1,0 +1,157 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+ *,
+ *::before,
+ *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Nunito Sans', sans-serif;
+ 
+ }
+ 
+ 
+ /* ------------------  Mobile View ------------------ */
+ 
+ 
+ 
+ /* // ######################################## Medium devices (tablets, 768px and up) ######################################## */
+ @media (min-width: 576px) and (max-width: 991.98px) { 
+     
+
+
+
+ }
+ 
+
+ 
+
+
+ /* // ######################################## Large devices (desktops, 992px and up) ######################################## */
+ @media (min-width: 992px)  { 
+
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* FLOAT Rules */
+ .clearfix::after{
+     content:"";
+     display: block;
+     clear: both;
+ }
+ .float-left{
+     float:left;
+ }
+ 
+ .float-right{
+     float:right;
+ }
+ 
+ /* Flex Rules */
+ .flex-between-centered{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .flex-center{
+     display: flex;
+     justify-content: center;
+ }
+ .flex-column{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .flex-column-space-around{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ 
+ .flex-cener-wrap{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+ 
+ 
+ /* Background Colors  */
+ 
+ .bg-blu {
+     background-color: #0084fd;
+ }
+ 
+ .bg-black {
+    background-color: #333333;
+}
+
+ .bg-violet{
+     background-color: #9792e4;
+ }
+ .bg-white{
+     background-color: white;
+ }
+ 
+
+/* Text Formation */
+
+ .text-center {
+     text-align: center;
+ }
+ 
+ .txt-white{
+     color: white;
+ }
+
+ .txt-violet{
+    color: #9792e4;
+ }
+
+ .txt-orange{
+    color: orange;
+ }
+
+ .txt-gray{
+    color: rgb(207, 199, 199);
+ }
+
+ .txt-blu{
+    color: #0084fd;
+ }
+
+ .txt-bold{
+    font-weight: bold;
+ }
+
+
+ .txt-1rem{
+    font-size: 1rem;
+ }
+
+ .txt-2rem{
+    font-size: 2rem;
+ }
+
+ .txt-4rem{
+    font-size: 4rem;
+ }
