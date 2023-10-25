@@ -49,8 +49,9 @@ main{
 }
 
 
-.margin-05rem{
+.txt-aside{
     margin: 0.5rem;
+    font-size: 1.6rem;
 }
 #home-botton:hover{
     color: white;
@@ -111,12 +112,7 @@ footer{
  /* // X-Small devices (portrait phones, less than 576px) */
  @media (min-width: 575.98px) { 
 
-    #aside{
-        width: 180px;
-        height: 100%;
-        background-color: #000000;
-        overflow: scroll;
-    }
+
     
     #container{
         width: calc(100vw - 180px);
@@ -125,7 +121,13 @@ footer{
 
 
     /* Aside */
-
+    #aside{
+        width: 180px;
+        height: 100%;
+        background-color: #000000;
+        overflow: scroll;
+    }
+    
     .mobile-hide{
         display: inline;
     }
@@ -133,18 +135,40 @@ footer{
     #logo{
         margin: 1rem 0.5rem ;
     }
+    .txt-aside{
+        font-size: 1rem;
+    }
 
 
+
+    /* Footer */
+
+    footer{
+        background-color: red;
+    }
 
   }
  
  /* // Small devices (landscape phones, less than 768px) */
  @media (min-width: 767.98px) { 
 
+
+
+
+    footer{
+        background-color: yellow;
+    }
  }
  
  /* // Medium devices (tablets, less than 992px) */
  @media (min-width: 991.98px) { 
+
+
+
+    footer{
+        background-color: green;
+    }   
+
 
  }
  
