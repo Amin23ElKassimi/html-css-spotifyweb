@@ -151,9 +151,9 @@ li:hover{
 
 
 #contents img{
-    height: 150px;
-    width: 100%;
-    object-fit: contain;
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -162,8 +162,17 @@ li:hover{
     margin-bottom: 2rem;
     margin-bottom: 1rem;
 }
+.img-cont{
+    position: relative;
+}
 
-
+.playmod{
+    height: 170px;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.421);
+    position: absolute;
+    top:0;
+}
 
 /* Footer */
 
@@ -211,9 +220,16 @@ footer{
 /* Album */
     #contents img{
         height: 200px;
-        width: 100%;
+        width: 200px;
         object-fit: contain;
         object-position: center;
+    }
+    .playmod{
+        height: 200px;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.421);
+        position: absolute;
+        top:0;
     }
 
     /* Footer */
@@ -228,6 +244,12 @@ footer{
  @media (min-width: 767.98px) { 
 
 
+
+    /* Alnum */
+    .col{
+        width: calc(100% / 4 - 1rem);
+        margin: 0.5rem;
+    }
 
 
     /* Header */
@@ -255,7 +277,11 @@ footer{
  /* // Medium devices (tablets, less than 992px) */
  @media (min-width: 991.98px) { 
 
-
+    /* Alnum */
+    .col{
+        width: calc(100% / 6 - 1rem);
+        margin: 0.5rem;
+    }
 
     footer{
         background-color: green;
