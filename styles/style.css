@@ -157,7 +157,22 @@ li:hover{
     object-position: center;
 }
 
-/*  */
+.img-cont{
+    position: relative;
+}
+
+img:hover{
+    filter: contrast(0.5);
+    filter: brightness(0.5);
+}
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
 
 #contents h1{
     margin: 2rem 20px;
@@ -168,13 +183,7 @@ li:hover{
     position: relative;
 }
 
-.playmod{
-    height: 170px;
-    width: 170px;
-    background-color: rgba(0, 0, 0, 0.421);
-    position: absolute;
-    top:0;
-}
+
 
 /* Footer */
 
