@@ -71,28 +71,97 @@ main{
 #container{
     width: calc(100vw - 50px);
     height: 100%;
-}
-
-/* Header */
-#header{
-    width: 100%;
-    height: 80px;
-    background-color: #0f1117;
-}
-
-
-/* Album */
-#album{
-    width: 100%;
-    height: calc(100% - 80px);
+    overflow: auto;
     background-color: #191d24;
 }
 
+/* Header*/
+#header-category{
+    width: 100%;
+    height: 80px;
+    background-color: #0f1117;
+    position: relative;
+}
+
+#upgrade-botton {
+    width: 157px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+#upgrade-botton:hover{
+    padding: 5px;
+    width: 217px;
+}
+
+/* Album */
+.contents{
+    width: 100%;
+    margin: 0 auto;
+     margin-top: 0px;
+     margin-bottom: 0px;
+    padding: 0 20px;
+}
+
+#album-main{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+ul {
+    list-style-type: none;
+    }
+li{
+    margin: 0 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+li:hover{
+    color: white;
+    font-weight: bold;
+}
 
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}    
+
+#contents{
+    overflow: auto;
+}
+
+.col{
+    width: calc(100% / 2 - 1rem);
+    margin: 0.5rem;
+}
 
 
+#contents img{
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
 
+#contents h1{
+    margin: 2rem 20px;
+    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -110,7 +179,7 @@ footer{
  
  
  /* // X-Small devices (portrait phones, less than 576px) */
- @media (min-width: 575.98px) { 
+ @media (min-width: 520.98px) { 
 
 
     
@@ -139,7 +208,13 @@ footer{
         font-size: 1rem;
     }
 
-
+/* Album */
+    #contents img{
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
 
     /* Footer */
 
@@ -153,6 +228,23 @@ footer{
  @media (min-width: 767.98px) { 
 
 
+
+
+    /* Header */
+
+    #upgrade-botton {
+        width: 157px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 6px;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translate(0,-50%);
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
 
 
     footer{
@@ -222,7 +314,7 @@ footer{
     justify-content: space-between;
 }
  
- .flex-cener-wrap{
+ .flex-center-wrap{
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
