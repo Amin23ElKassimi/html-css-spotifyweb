@@ -98,8 +98,8 @@ main{
 }
 
 #upgrade-botton:hover{
-    padding: 5px;
-    width: 217px;
+    padding: 10px;
+    width: 190px;
 }
 
 /* Album */
@@ -174,10 +174,14 @@ img:hover{
     display: none;
 }
 
+main img:hover .play{
+    display: block;
+}
+
 #contents h1{
     margin: 2rem 20px;
     margin-bottom: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 .img-cont{
     position: relative;
@@ -193,16 +197,56 @@ footer{
     background-color: #292929;
 }
 
+footer img{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin:0 0.5rem;
+}
 
- 
+.line-height{
+    line-height: 15px;
+}
+.prefered{
+    margin: 0.5rem 0.5rem;
+}
+
+#commands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 170px;
+}
+
+#settings-audio{
+    min-width:100px ;
+}
+
+.bar-1{
+    height: 3px;
+    background-color: gray;
+    width: 20px;
+}
+.bar-2{
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    width: 10px;
+}
+
+
  /* ------------------  Media Queris------------------ */
  
  
  /* // X-Small devices (portrait phones, less than 576px) */
  @media (min-width: 520.98px) { 
 
-
     
+    #header-category{
+        background-color: red;
+    }
+
     #container{
         width: calc(100vw - 180px);
         height: 100%;
@@ -245,8 +289,10 @@ footer{
 
     /* Footer */
 
-    footer{
-        background-color: red;
+
+    footer img{
+        height: 50px;
+        width: 50px;
     }
 
   }
@@ -254,7 +300,9 @@ footer{
  /* // Small devices (landscape phones, less than 768px) */
  @media (min-width: 767.98px) { 
 
-
+    #header-category{
+        background-color: rgb(0, 255, 166);
+    }
 
     /* Alnum */
     .col{
@@ -271,7 +319,7 @@ footer{
     /* Header */
 
     #upgrade-botton {
-        width: 157px;
+        width: 200px;
         border: 1px solid white;
         border-radius: 20px;
         padding: 6px;
@@ -284,14 +332,22 @@ footer{
         font-size: 0.9rem;
       }
 
-
-    footer{
-        background-color: yellow;
+      #upgrade-botton:hover{
+        padding: 10px;
+        width: 210px;
     }
+
+
+
  }
  
  /* // Medium devices (tablets, less than 992px) */
  @media (min-width: 991.98px) { 
+
+    #header-category{
+        background-color: violet;
+    }
+
 
     /* Alnum */
     .col{
@@ -299,9 +355,7 @@ footer{
         margin: 0.5rem;
     }
 
-    footer{
-        background-color: green;
-    }   
+ 
 
 
  }
@@ -419,6 +473,9 @@ footer{
     font-weight: bold;
 }
 
+.txt-08rem{
+    font-size: 0.8rem;
+}
 
  .txt-1rem{
     font-size: 1rem;
@@ -434,4 +491,20 @@ footer{
 
  .txt-4rem{
     font-size: 4rem;
+}
+
+/* Rotate */
+
+.deg180{
+    rotate: 180deg;
+}
+
+.flip{
+    transform: scaleX(-1);
+}
+
+/* Margin */
+
+.margin-05rem{
+    margin: 0 0.5rem;
 }
