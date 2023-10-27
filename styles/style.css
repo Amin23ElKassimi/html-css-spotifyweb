@@ -14,7 +14,6 @@
  
 }
  
-
 /* -------------------- Mobile --------------------  */
 
 /* ############ Main ############  */
@@ -226,9 +225,23 @@ footer img{
 .bar-1{
     height: 3px;
     background-color: gray;
-    width: 20px;
+    width: 80px;
+    margin: 8px;
 }
 .bar-2{
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    width: 30px;
+}
+
+.bar-3{
+    height: 3px;
+    background-color: gray;
+    width: 50px;
+    margin: 8px;
+}
+.bar-4{
     position: absolute;
     height: 3px;
     background-color: white;
@@ -295,6 +308,19 @@ footer img{
         width: 50px;
     }
 
+    .bar-1{
+        height: 3px;
+        background-color: gray;
+        width: 150px;
+        margin: 8px;
+    }
+    .bar-2{
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        width: 80px;
+    }
+ 
   }
  
  /* // Small devices (landscape phones, less than 768px) */
@@ -337,6 +363,20 @@ footer img{
         width: 210px;
     }
 
+    /* Footer */
+
+    .bar-1{
+        height: 3px;
+        background-color: gray;
+        width: 250px;
+        margin: 8px;
+    }
+    .bar-2{
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        width: 180px;
+    }
 
 
  }
@@ -356,17 +396,23 @@ footer img{
     }
 
  
+/* Footer */
 
+
+.bar-1{
+    height: 3px;
+    background-color: gray;
+    width: 350px;
+    margin: 8px;
+}
+.bar-2{
+    position: absolute;
+    height: 3px;
+    background-color: white;
+    width: 180px;
+}
 
  }
- 
-
- 
- 
- 
- 
- 
- 
  
  /* FLOAT Rules */
  .clearfix::after{
